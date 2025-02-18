@@ -28,7 +28,7 @@ public class Controller {
      *
      * @param name      Numele produsului
      * @param preis     Pretul produsului
-     * @param herkunftsregion 
+     * @param herkunftsregion
      * @return true, daca a fost adaugat cu succes, sau false, daca nu.
      */
     public boolean addProdukt(String name, Integer preis, String herkunftsregion) {

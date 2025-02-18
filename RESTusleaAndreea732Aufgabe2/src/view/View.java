@@ -15,7 +15,12 @@ public class View {
         System.out.println("2. Produkt loschen");
         System.out.println("3. Produkt bearbeiten");
         System.out.println("4. Produktt suchen");
-        /**
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bitte wahlen:");
+        String input = scanner.nextLine();
+
         if(input.equals("1"))
             produktHinzufugen();
         else if(input.equals("2"))
@@ -23,7 +28,7 @@ public class View {
         else if(input.equals("3"))
             produktBearbeiten();
         else if(input.equals("4"))
-            produktSuchen();
+            produktSuchen();}
 
         public void produktHinzufugen() {
             Scanner scanner = new Scanner(System.in);
@@ -73,7 +78,7 @@ public class View {
             home();
         }
 
-        public void prooduktBearbeiten() {
+        public void produktBearbeiten() {
             Scanner scanner = new Scanner(System.in);
 
             // primim ca input un nume
@@ -124,7 +129,7 @@ public class View {
             }
 
             home();
-            */
+
         }
 
 
