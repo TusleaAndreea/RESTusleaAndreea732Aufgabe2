@@ -14,12 +14,6 @@ public class Controller {
     //--------------------------------------------------------------------
     // a)
 
-    /**
-     * O metoda care gaseste un produs
-     *
-     * @param name Numele produsului cautat
-     * @return produsul gasit, daca exista in lista, altfel null
-     */
     public Produkt findProdukt(String name) {
         for (Produkt produkt : produktList) {
             if (produkt.getName().equals(name))
@@ -32,9 +26,9 @@ public class Controller {
     /**
      * O metoda care adauga un medicament nou
      *
-     * @param name      Numele medicamentului
-     * @param preis     Pretul medicamentului
-     * @param herkunftsregion Boala pe care o trateaza medicamentul
+     * @param name      Numele produsului
+     * @param preis     Pretul produsului
+     * @param herkunftsregion 
      * @return true, daca a fost adaugat cu succes, sau false, daca nu.
      */
     public boolean addProdukt(String name, Integer preis, String herkunftsregion) {

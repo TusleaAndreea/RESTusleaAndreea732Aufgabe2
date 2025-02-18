@@ -108,26 +108,21 @@ public class View {
         public void produktSuchen() {
             Scanner scanner = new Scanner(System.in);
 
-            // primim ca input un nume
 
             System.out.println("Name = ");
             String name = scanner.nextLine();
 
-            // salvam rezultatul cautarii
             Produkt produkt = controller.findProdukt(name);
 
-            // daca nu a fost gasit, scriem asta
             if(produkt == null) {
                 System.out.println("Man konnte nicht finden");
             }
-            // altfel scriem datele despre medicament
             else {
                 System.out.println("Name = " + produkt.getName());
                 System.out.println("Preis = " + produkt.getPreis());
                 System.out.println("Herkunft = " + produkt.getHerkunftsregion());
             }
 
-            // mergem inapoi la pagina principala
             home();
             */
         }
